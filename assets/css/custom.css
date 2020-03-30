@@ -25,6 +25,10 @@ body {
   font-size: .8em;
 }
 
+.f-size-medium {
+  font-size: 1em;
+}
+
 .f-size-big {
   font-size: 3em;
 }

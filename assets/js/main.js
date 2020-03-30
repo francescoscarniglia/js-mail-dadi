@@ -25,8 +25,6 @@ if(userFound == true) {
   document.getElementById('search-array').classList.add('bg-usuccess');
   console.log('utente non trovato');
 }
-
-
 //Esercizio 2 : 'Gioco dei dadi'
 //generare un numero random da 1  a 6, sia per il giocatore sia per il computer
 
@@ -54,6 +52,7 @@ bottoneGioca.addEventListener('click',
     document.getElementById('dice-img').classList.add('animation-fast');
   }
 );
+
 
 
 //Stabilire il vincitore, in base a chi fa il punteggio più alto
