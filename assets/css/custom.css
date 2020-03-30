@@ -92,3 +92,48 @@ body {
   justify-content: center;
   text-align: center;
 }
+
+#dice-img {
+  width: 120px;
+}
+.score {
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  background: #fff;
+}
+
+.score-big {
+  height: 50px;
+  width: 300px;
+  margin: auto;
+  background: #fff;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
+}
+.animation-norm
+{
+  animation: rotation 5s alternate infinite;
+}
+.animation-fast {
+  animation: rotationFast .4s;
+  animation-iteration-count: initial;
+}
+
+@keyframes rotationFast {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

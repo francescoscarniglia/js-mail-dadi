@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="button-control">
-    <span><h4 class="margin-b-20">Esercizi:</h4></span>
+    <span><h4 class="margin-b-20">Esercizi 30-03-2020:</h4></span>
     <span><a href="#search-array" class="btn f-weight-900 f-size-small t-upp col-black">Cerca in un array</a></span>
     <span><a href="#dice" class="btn f-weight-900 f-size-small t-upp col-black">Gioco dei dadi</a></span>
     </div><!-- button-control -->
@@ -25,7 +25,13 @@
     <section id="dice" class="content bg-col-secondary">
       <div class="container">
         <div class="reply">
-        <h1 id="game-text" class="f-size-big f-weight-900">Hai vinto!</h1>
+          <div class="margin-b-20">
+            <p class="margin-b-20">Clicca sul dado per giocare</p>
+            <a id="btn-play"><img id="dice-img" class="animation-norm" src="assets/img/dice.png" alt="dice"></a>
+          </div>
+        <span>Il tuo punteggio: </span><h1 id="player-score" class="f-size-big f-weight-900 score"></h1>
+        <span>Punteggio computer: </span><h1 id="computer-score" class="f-size-big f-weight-900 score"></h1>
+        <span>Il vincitore &egrave;: </span><h1 id="game-text" class="f-size-big f-weight-900 score-big"></h1>
         </div><!-- reply -->
       </div><!-- container -->
     </section><!-- dice -->
