@@ -1,1 +1,27 @@
-console.log('ok!');
+// Esercizio 1: 'Cerca in un array':
+var userFound = false;
+// 1 Chiedi all’utente la sua email,
+var mailUtente = prompt('Inserisci la tua email.');
+// console.log(mailUtente);
+
+//creo il contenitore di 'email'
+var indirizziMail = ['michele@boolean.careers', 'fabio@boolean.careers', 'roberto@boolean.careers'];
+// console.log(indirizziMail);
+
+// 2 controlla che sia nella lista di chi può accedere,
+for(var i = 0; i < indirizziMail.length; i++) {
+  var item = indirizziMail[i];
+  if(item == mailUtente) {
+    userFound = true;
+  }
+}
+// 3 stampa un messaggio appropriato sull’esito dell controllo
+if(userFound == true) {
+  document.getElementById('reply-text').innerHTML = 'Utente trovato.';
+  document.getElementById('search-array').classList.add('bg-success');
+  console.log('utente trovato');
+} else {
+  document.getElementById('reply-text').innerHTML = 'Utente non trovato.';
+  document.getElementById('search-array').classList.add('bg-usuccess');
+  console.log('utente non trovato');
+}
